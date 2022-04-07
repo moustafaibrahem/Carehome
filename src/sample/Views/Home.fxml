@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="635.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.HomeController">
+   <children>
+      <BorderPane prefHeight="635.0" prefWidth="1000.0">
+         <top>
+            <HBox prefHeight="26.0" prefWidth="986.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="26.0" prefWidth="741.0">
+                    <menus>
+                      <Menu fx:id="mnAddEdit" mnemonicParsing="false" text="Add &amp; Edit">
+                        <items>
+                              <MenuItem fx:id="mniStaff" mnemonicParsing="false" text="Staff" />
+                              <MenuItem fx:id="mniPatient" mnemonicParsing="false" text="Patient" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="mnView" mnemonicParsing="false" text="View">
+                        <items>
+                          <MenuItem fx:id="mniViewPatient" mnemonicParsing="false" text="View Patient" />
+                        </items>
+                      </Menu>
+                        <Menu fx:id="mnFunction" mnemonicParsing="false" text="Function">
+                          <items>
+                            <MenuItem fx:id="mniPrescription" mnemonicParsing="false" text="Prescription" />
+                              <MenuItem fx:id="mniMedicinesAdministration" mnemonicParsing="false" text="Medicines Administration" />
+                              <MenuItem fx:id="mniChangePatientBed" mnemonicParsing="false" text="Change Patient Bed" />
+                          </items>
+                        </Menu>
+                    </menus>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </MenuBar>
+                  <Button fx:id="btnChangePassword" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Change Password" />
+                  <Button fx:id="btnLogout" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" text="Log out" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblType" layoutX="13.0" layoutY="14.0" prefHeight="40.0" prefWidth="216.0" text="Type">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="65.0" prefHeight="40.0" prefWidth="133.0" text="personal details:">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblName" layoutX="271.0" layoutY="103.0" prefHeight="40.0" prefWidth="216.0" text="name">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPhone" layoutX="271.0" layoutY="157.0" prefHeight="40.0" prefWidth="216.0" text="phone">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="152.0" layoutY="103.0" prefHeight="40.0" prefWidth="96.0" text="name">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="152.0" layoutY="157.0" prefHeight="40.0" prefWidth="96.0" text="phone">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

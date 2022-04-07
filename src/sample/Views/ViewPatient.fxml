@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ViewPatientController">
+    <children>
+        <TableView fx:id="tvPatient" layoutX="12.0" layoutY="311.0" onMouseClicked="#getSelectedRow" prefHeight="298.0" prefWidth="962.0">
+            <columns>
+                <TableColumn fx:id="colPatientID" prefWidth="75.0" text="Patient ID" />
+                <TableColumn fx:id="colName" prefWidth="190.0" text="Name" />
+                <TableColumn fx:id="colPhone" prefWidth="129.0" text="Phone" />
+                <TableColumn fx:id="colGender" prefWidth="75.0" text="Gender" />
+                <TableColumn fx:id="colAdmittedAt" prefWidth="75.0" text="Admitted at" />
+                <TableColumn fx:id="colIsolate" prefWidth="128.0" text="Isolate" />
+                <TableColumn fx:id="colBedID" prefWidth="191.0" text="Bed ID" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+      <Label layoutX="23.0" layoutY="117.0" prefHeight="25.0" prefWidth="126.0" text="Name">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="149.0" layoutY="117.0" />
+      <Label layoutX="23.0" layoutY="161.0" prefHeight="25.0" prefWidth="126.0" text="Phone">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPhone" layoutX="149.0" layoutY="161.0" />
+      <Label layoutX="23.0" layoutY="205.0" prefHeight="25.0" prefWidth="126.0" text="Gender">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="205.0" prefHeight="25.0" prefWidth="126.0" text="Admitted at">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="252.0" prefHeight="25.0" prefWidth="126.0" text="Bed ID">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="161.0" prefHeight="25.0" prefWidth="126.0" text="need Isolate">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkNeedIsolate" layoutX="567.0" layoutY="161.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="17.0" />
+      <Label fx:id="lblAdmittedAt" layoutX="567.0" layoutY="205.0" prefHeight="25.0" prefWidth="126.0" text="Admitted at">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="75.0" prefHeight="25.0" prefWidth="126.0" text="Patient ID">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPatientID" layoutX="149.0" layoutY="75.0" />
+      <Button fx:id="btnSearch" layoutX="441.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Search" />
+      <TextField fx:id="txtGender" layoutX="149.0" layoutY="205.0" />
+      <TextField fx:id="txtBedID" layoutX="149.0" layoutY="252.0" />
+    </children>
+</AnchorPane>
